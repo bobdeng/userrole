@@ -6,6 +6,7 @@ import java.util.Optional;
 
 public class UserRepositoryImpl implements UserRepository {
     private Map<String,User> userMap=new HashMap<>();
+    private long lockUserExpire;
     @Override
     public Optional<User> findById(String id) {
         return Optional.ofNullable(userMap.get(id));
@@ -35,5 +36,15 @@ public class UserRepositoryImpl implements UserRepository {
                 .stream()
                 .filter(User::isAdmin)
                 .findAny();
+    }
+
+    @Override
+    public void lockUser(User user, long minRetry) {
+        lockUserExpire=System.currentTimeMillis()+minRetry;
+    }
+
+    @Override
+    public boolean isLocked(User user) {
+        return lockUserExpire>System.currentTimeMillis();
     }
 }

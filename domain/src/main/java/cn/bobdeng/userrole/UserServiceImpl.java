@@ -2,6 +2,7 @@ package cn.bobdeng.userrole;
 
 import cn.bobdeng.userrole.exception.LoginNameNotfoundException;
 import cn.bobdeng.userrole.exception.OnlyOneAdminException;
+import cn.bobdeng.userrole.exception.TooFastRetryException;
 import cn.bobdeng.userrole.exception.WrongPasswordException;
 import lombok.extern.java.Log;
 
@@ -12,18 +13,24 @@ import java.util.UUID;
 public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
     private PasswordEncoder passwordEncoder;
+    private UserConfig userConfig;
 
     public UserServiceImpl(UserRepository userRepository, PasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
+        userConfig = new UserConfig();
     }
 
     @Override
     public User checkLogin(String loginName, String password) {
         User user = userRepository.findByLoginName(loginName).orElseThrow(LoginNameNotfoundException::new);
+        if (userRepository.isLocked(user)) {
+            throw new TooFastRetryException();
+        }
         if (passwordEncoder.passwordRight(password, user.getPassword())) {
             return user;
         } else {
+            userRepository.lockUser(user, userConfig.getMinRetry());
             throw new WrongPasswordException();
         }
     }
@@ -40,7 +47,7 @@ public class UserServiceImpl implements UserService {
         if (userRepository.findAdmin().isPresent()) {
             throw new OnlyOneAdminException();
         }
-        User user=User.builder()
+        User user = User.builder()
                 .id(UUID.randomUUID().toString())
                 .admin(true)
                 .loginName(loginName)

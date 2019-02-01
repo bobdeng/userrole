@@ -2,6 +2,7 @@ package cn.bobdeng.userrole;
 
 import cn.bobdeng.userrole.exception.LoginNameNotfoundException;
 import cn.bobdeng.userrole.exception.OnlyOneAdminException;
+import cn.bobdeng.userrole.exception.TooFastRetryException;
 import cn.bobdeng.userrole.exception.WrongPasswordException;
 import org.junit.Before;
 import org.junit.Test;
@@ -38,6 +39,7 @@ public class UserServiceImplTest {
     public void checkLogin_admin() {
         User admin = userService.initAdmin("admin", "123455");
         User checkLogin = userService.checkLogin("admin", "123455");
+        checkLogin = userService.checkLogin("admin", "123455");
         assertEquals(admin.getId(), checkLogin.getId());
         User user = userService.newUser(User.builder()
                 .roles(Arrays.asList("user"))
@@ -52,6 +54,14 @@ public class UserServiceImplTest {
     public void checkLogin_wrongPass() {
         User admin = userService.initAdmin("admin", "123455");
         User checkLogin = userService.checkLogin("admin", "123456");
+    }
+    @Test(expected = TooFastRetryException.class)
+    public void checkLogin_retryTooFast() {
+        User admin = userService.initAdmin("admin", "123455");
+        try{
+            userService.checkLogin("admin", "123456");
+        }catch (Exception e){}
+        userService.checkLogin("admin", "123456");
     }
 
     @Test(expected = LoginNameNotfoundException.class)

@@ -12,4 +12,8 @@ public interface UserRepository {
     void newUser(User user);
 
     Optional<User> findAdmin();
+
+    void lockUser(User user, long minRetry);
+
+    boolean isLocked(User user);
 }
