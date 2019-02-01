@@ -5,8 +5,9 @@ import java.util.Map;
 import java.util.Optional;
 
 public class UserRepositoryImpl implements UserRepository {
-    private Map<String,User> userMap=new HashMap<>();
+    private Map<String, User> userMap = new HashMap<>();
     private long lockUserExpire;
+
     @Override
     public Optional<User> findById(String id) {
         return Optional.ofNullable(userMap.get(id));
@@ -27,7 +28,7 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     public void newUser(User user) {
-        userMap.put(user.getId(),user);
+        userMap.put(user.getId(), user);
     }
 
     @Override
@@ -40,11 +41,20 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     public void lockUser(User user, long minRetry) {
-        lockUserExpire=System.currentTimeMillis()+minRetry;
+        lockUserExpire = System.currentTimeMillis() + minRetry;
+    }
+
+    @Override
+    public Optional<User> findByOpenId(String openId) {
+        return userMap.values()
+                .stream()
+                .filter(user -> user.getWeixin() != null)
+                .filter(user -> user.getWeixin().getOpenId().equals(openId))
+                .findAny();
     }
 
     @Override
     public boolean isLocked(User user) {
-        return lockUserExpire>System.currentTimeMillis();
+        return lockUserExpire > System.currentTimeMillis();
     }
 }

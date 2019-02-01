@@ -7,6 +7,8 @@ public interface UserRepository {
 
     Optional<User> findByLoginName(String loginName);
 
+    Optional<User> findByOpenId(String openId);
+
     void updateUserPassword(User user);
 
     void newUser(User user);

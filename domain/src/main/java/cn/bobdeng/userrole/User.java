@@ -16,5 +16,8 @@ public class User {
     private String loginName;
     private String password;
     private boolean admin;
+    private UserEmail email;
+    private UserWeixin weixin;
+    private UserMobile mobile;
     private List<String> roles;
 }

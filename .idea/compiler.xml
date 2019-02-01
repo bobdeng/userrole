@@ -6,14 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="userrole (1)" />
-        <module name="userrole (4)" />
-      </profile>
-      <profile name="Annotation profile for userrole" enabled="true">
-        <sourceOutputDir name="../domain/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../domain/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
+        <module name="domain" />
         <module name="userrole (3)" />
+        <module name="userrole (4)" />
       </profile>
     </annotationProcessing>
   </component>
