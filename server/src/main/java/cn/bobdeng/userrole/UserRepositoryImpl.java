@@ -1,47 +1,56 @@
 package cn.bobdeng.userrole;
 
+import org.redisson.api.RedissonClient;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
+import java.util.concurrent.TimeUnit;
+
 @Service
 public class UserRepositoryImpl implements UserRepository {
+    @Autowired
+    UserRoleDAO userRoleDAO;
+    @Autowired
+    RedissonClient redissonClient;
+
     @Override
     public Optional<User> findById(String id) {
-        return Optional.empty();
+        return userRoleDAO.findById(id).map(UserDO::toEntity);
     }
 
     @Override
     public Optional<User> findByLoginName(String loginName) {
-        return Optional.empty();
+        return userRoleDAO.findByLoginName(loginName).map(UserDO::toEntity);
     }
 
     @Override
     public Optional<User> findByOpenId(String openId) {
-        return Optional.empty();
+        return userRoleDAO.findByOpenId(openId).map(UserDO::toEntity);
     }
 
     @Override
     public void updateUserPassword(User user) {
-
+        userRoleDAO.updatePassword(user.getId(), user.getPassword());
     }
 
     @Override
     public void newUser(User user) {
-
+        userRoleDAO.save(UserDO.fromEntity(user));
     }
 
     @Override
     public Optional<User> findAdmin() {
-        return Optional.empty();
+        return userRoleDAO.findAdmin().map(UserDO::toEntity);
     }
 
     @Override
     public void lockUser(User user, long minRetry) {
-
+        redissonClient.getBucket("user-login-lock-" + user.getId()).trySet("" + System.currentTimeMillis(), minRetry, TimeUnit.MILLISECONDS);
     }
 
     @Override
     public boolean isLocked(User user) {
-        return false;
+        return redissonClient.getBucket("user-login-lock-" + user.getId()).get() != null;
     }
 }
