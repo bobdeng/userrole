@@ -2,8 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3624a3c9-3197-415f-84ef-af5f517a12a2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/cn/bobdeng/userrole/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/cn/bobdeng/userrole/UserRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/cn/bobdeng/userrole/UserRoleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/cn/bobdeng/userrole/UserRoleDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cn/bobdeng/userrole/PasswordEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cn/bobdeng/userrole/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cn/bobdeng/userrole/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cn/bobdeng/userrole/UserConfig$UserConfigBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cn/bobdeng/userrole/UserConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cn/bobdeng/userrole/UserEmail$UserEmailBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cn/bobdeng/userrole/UserEmail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cn/bobdeng/userrole/UserMobile$UserMobileBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cn/bobdeng/userrole/UserMobile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cn/bobdeng/userrole/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cn/bobdeng/userrole/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cn/bobdeng/userrole/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cn/bobdeng/userrole/UserWeixin$UserWeixinBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cn/bobdeng/userrole/UserWeixin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cn/bobdeng/userrole/exception/LoginNameNotfoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cn/bobdeng/userrole/exception/OnlyOneAdminException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cn/bobdeng/userrole/exception/TooFastRetryException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/cn/bobdeng/userrole/exception/WrongPasswordException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/test-classes/cn/bobdeng/userrole/UserRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/test-classes/cn/bobdeng/userrole/UserServiceImplTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/test-classes/cn/bobdeng/userrole/UserServiceImplTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/test/target/" />
     <ignored path="$PROJECT_DIR$/domain/target/" />
@@ -23,8 +43,8 @@
     <SUITE FILE_PATH="coverage/userrole$UserServiceImplTest_checkLogin_wrongPass.ic" NAME="UserServiceImplTest.checkLogin_wrongPass Coverage Results" MODIFIED="1548998598927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>cn.bobdeng.userrole.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/userrole$UserServiceImplTest.ic" NAME="UserServiceImplTest Coverage Results" MODIFIED="1548998535593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>cn.bobdeng.userrole.*</FILTER>
+    <SUITE FILE_PATH="coverage/userrole$UserServiceImplTest.ic" NAME="UserServiceImplTest Coverage Results" MODIFIED="1549007231152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cn.bobdeng.userrole.exception.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/userrole$cn_bobdeng_userrole_in_userrole__3_.ic" NAME="cn.bobdeng.userrole in userrole (3) Coverage Results" MODIFIED="1548999606758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>cn.bobdeng.userrole.exception.*</FILTER>
@@ -35,23 +55,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -77,14 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserRoleConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/cn/bobdeng/userrole/UserRoleConfig.java">
+      <file leaf-file-name="UserServiceImplTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/domain/src/test/java/cn/bobdeng/userrole/UserServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="413">
+              <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -92,8 +106,8 @@
       <file leaf-file-name="UserRepositoryImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/src/main/java/cn/bobdeng/userrole/UserRepositoryImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="242">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#178#179#0" expanded="true" />
@@ -111,6 +125,27 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserRepositoryImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/domain/src/test/java/cn/bobdeng/userrole/UserRepositoryImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="51" column="74" selection-start-line="51" selection-start-column="74" selection-end-line="51" selection-end-column="74" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="PasswordEncoderImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/main/java/cn/bobdeng/userrole/PasswordEncoderImpl.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -121,27 +156,6 @@
                 <element signature="e#151#152#0" expanded="true" />
                 <element signature="e#178#179#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserEmail.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/UserEmail.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserMobile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/UserMobile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -230,6 +244,31 @@
             <path>
               <item name="userrole" type="b2602c69:ProjectViewProjectNode" />
               <item name="userrole" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="userrole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="userrole" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="userrole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="userrole" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="userrole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="userrole" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="userrole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="userrole" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -302,7 +341,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.cn.bobdeng.userrole in userrole (3)">
+  <component name="RunManager" selected="JUnit.UserServiceImplTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -449,9 +488,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceImplTest" />
         <item itemvalue="JUnit.cn.bobdeng.userrole in userrole (3)" />
         <item itemvalue="JUnit.UserServiceImplTest.checkLogin_wrongPass" />
-        <item itemvalue="JUnit.UserServiceImplTest" />
         <item itemvalue="JUnit.UserServiceImplTest.checkLogin_admin" />
       </list>
     </recent_temporary>
@@ -468,14 +507,11 @@
       <updated>1548986611605</updated>
       <workItem from="1548986614431" duration="2070000" />
       <workItem from="1548998373562" duration="1867000" />
-      <workItem from="1549000622727" duration="3772000" />
+      <workItem from="1549000622727" duration="4456000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="cn_bobdeng_userrole_in_userrole_(3) - 2019.02.01 at 13h 24m 00s.xml">
-      <configuration name="cn.bobdeng.userrole in userrole (3)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="cn_bobdeng_userrole_in_userrole_(3) - 2019.02.01 at 13h 25m 14s.xml">
       <configuration name="cn.bobdeng.userrole in userrole (3)" configurationId="JUnit" />
     </history-entry>
@@ -503,13 +539,15 @@
     <history-entry file="cn_bobdeng_userrole_in_userrole_(3) - 2019.02.01 at 13h 58m 49s.xml">
       <configuration name="cn.bobdeng.userrole in userrole (3)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserServiceImplTest - 2019.02.01 at 15h 47m 12s.xml">
+      <configuration name="UserServiceImplTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7709000" />
+    <option name="totallyTimeSpent" value="8393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1416" height="817" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
@@ -532,9 +570,10 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32998565" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" visible="true" weight="0.16375546" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32998565" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496361" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32998565" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2496361" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -543,7 +582,6 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="4" side_tool="true" visible="true" weight="0.16375546" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
@@ -609,8 +647,6 @@
           <caret line="47" column="56" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -704,8 +740,6 @@
           <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -788,24 +822,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/test/java/cn/bobdeng/userrole/UserServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/exception/TooFastRetryException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -823,25 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/test/java/cn/bobdeng/userrole/UserRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="51" column="74" selection-start-line="51" selection-start-column="74" selection-end-line="51" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -882,18 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/cn/bobdeng/userrole/PasswordEncoderImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#151#152#0" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/domain/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -925,10 +914,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/test/java/cn/bobdeng/userrole/UserRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="51" column="74" selection-start-line="51" selection-start-column="74" selection-end-line="51" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/test/java/cn/bobdeng/userrole/UserServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/cn/bobdeng/userrole/PasswordEncoderImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#178#179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/cn/bobdeng/userrole/UserRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="242">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#178#179#0" expanded="true" />
