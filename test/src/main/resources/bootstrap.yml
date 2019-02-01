@@ -1,0 +1,10 @@
+server:
+    port: 8080
+spring:
+  application:
+    name: weperk-api
+  cloud:
+    config:
+      name: tidb,redis
+      profile: dev
+      uri: http://47.98.119.121:8001/

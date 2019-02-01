@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xiaojiang.financeaccount.server.dao.AccountDAO">
+    <update id="updateAccountBalance">
+        update tb_finance_account a set a.balance=a.balance+#{value} where id=#{id}
+    </update>
+</mapper>

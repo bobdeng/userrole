@@ -1,0 +1,4 @@
+*.class
+*.jar
+domain/target/
+server/target/
