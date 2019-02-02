@@ -1,9 +1,6 @@
 package cn.bobdeng.userrole;
 
-import cn.bobdeng.userrole.exception.LoginNameNotfoundException;
-import cn.bobdeng.userrole.exception.OnlyOneAdminException;
-import cn.bobdeng.userrole.exception.TooFastRetryException;
-import cn.bobdeng.userrole.exception.WrongPasswordException;
+import cn.bobdeng.userrole.exception.*;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -86,5 +83,12 @@ public class UserServiceImplTest {
         userService.initAdmin("admin", "123455");
         userService.changePassword("admin","1234551","123456");
         userService.checkLogin("admin", "123456");
+    }
+    @Test(expected = DuplicateLoginName.class)
+    public void addDuplicateLoginName(){
+        User user = User.builder().loginName("bobdeng").password("123456").build();
+        userService.newUser(user);
+        userService.newUser(user);
+
     }
 }

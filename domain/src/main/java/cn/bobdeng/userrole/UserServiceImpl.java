@@ -1,9 +1,6 @@
 package cn.bobdeng.userrole;
 
-import cn.bobdeng.userrole.exception.LoginNameNotfoundException;
-import cn.bobdeng.userrole.exception.OnlyOneAdminException;
-import cn.bobdeng.userrole.exception.TooFastRetryException;
-import cn.bobdeng.userrole.exception.WrongPasswordException;
+import cn.bobdeng.userrole.exception.*;
 import lombok.extern.java.Log;
 
 import java.util.Arrays;
@@ -62,6 +59,9 @@ public class UserServiceImpl implements UserService {
     public User newUser(User user) {
         user.setId(UUID.randomUUID().toString());
         user.setAdmin(false);
+        if (userRepository.findByLoginName(user.getLoginName()).isPresent()) {
+            throw new DuplicateLoginName();
+        }
         userRepository.newUser(user);
         return user;
     }

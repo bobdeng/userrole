@@ -18,7 +18,6 @@ import java.util.stream.Collectors;
 @Table(name = "t_userrole")
 public class UserDO {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(length = 40)
     private String id;
     @Column(length = 20)
