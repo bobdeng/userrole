@@ -62,6 +62,7 @@ public class UserServiceImpl implements UserService {
         if (userRepository.findByLoginName(user.getLoginName()).isPresent()) {
             throw new DuplicateLoginName();
         }
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
         userRepository.newUser(user);
         return user;
     }
