@@ -21,12 +21,12 @@ public class UserServiceImplTest {
         PasswordEncoder passwordEncoder = new PasswordEncoder() {
             @Override
             public String encode(String rawPassword) {
-                return "encode:" + rawPassword;
+                return rawPassword.hashCode()+"";
             }
 
             @Override
             public boolean passwordRight(String rawPassword, String encodePassword) {
-                return encodePassword.contains(rawPassword);
+                return (rawPassword.hashCode()+"").equals(encodePassword);
             }
         };
         userService = new UserServiceImpl(userRepository, passwordEncoder);

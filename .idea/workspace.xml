@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3624a3c9-3197-415f-84ef-af5f517a12a2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/exception/DuplicateLoginName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/test/java/cn/bobdeng/userrole/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/cn/bobdeng/userrole/UserServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/cn/bobdeng/userrole/UserDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/cn/bobdeng/userrole/UserDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/cn/bobdeng/userrole/UserRoleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/cn/bobdeng/userrole/UserRoleDAO.java" afterDir="false" />
-    </list>
+    <list default="true" id="3624a3c9-3197-415f-84ef-af5f517a12a2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/test/target/" />
     <ignored path="$PROJECT_DIR$/domain/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+            <state relative-caret-position="272">
+              <caret line="64" column="66" selection-start-line="64" selection-start-column="66" selection-end-line="64" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -51,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/server/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="7" selection-end-column="37" />
+              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="7" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -60,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/server/src/main/java/cn/bobdeng/userrole/UserDO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
-              <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServiceImplTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserServiceImplTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/domain/src/test/java/cn/bobdeng/userrole/UserServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="87" column="40" lean-forward="true" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
+            <state relative-caret-position="705">
+              <caret line="87" column="40" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -173,7 +167,6 @@
         <option value="$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/OnlyOneAdminException.java" />
         <option value="$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/UserConfig.java" />
         <option value="$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/exception/TooFastRetryException.java" />
-        <option value="$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/WeixinUser.java" />
         <option value="$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/UserWeixin.java" />
         <option value="$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/UserEmail.java" />
@@ -192,6 +185,7 @@
         <option value="$PROJECT_DIR$/server/src/main/java/cn/bobdeng/userrole/UserDO.java" />
         <option value="$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/exception/DuplicateLoginName.java" />
         <option value="$PROJECT_DIR$/domain/src/test/java/cn/bobdeng/userrole/UserServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/UserServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -367,7 +361,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceImplTest.addDuplicateLoginName">
+  <component name="RunManager" selected="JUnit.cn.bobdeng.userrole in userrole (3)">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -538,9 +532,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.cn.bobdeng.userrole in userrole (3)" />
         <item itemvalue="JUnit.UserServiceImplTest.addDuplicateLoginName" />
         <item itemvalue="JUnit.UserServiceImplTest" />
-        <item itemvalue="JUnit.cn.bobdeng.userrole in userrole (3)" />
         <item itemvalue="JUnit.UserServiceImplTest.checkLogin_wrongPass" />
         <item itemvalue="JUnit.UserServiceImplTest.checkLogin_admin" />
       </list>
@@ -558,17 +552,11 @@
       <updated>1548986611605</updated>
       <workItem from="1548986614431" duration="2070000" />
       <workItem from="1548998373562" duration="1867000" />
-      <workItem from="1549000622727" duration="9043000" />
+      <workItem from="1549000622727" duration="9298000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="cn_bobdeng_userrole_in_userrole_(3) - 2019.02.01 at 13h 25m 14s.xml">
-      <configuration name="cn.bobdeng.userrole in userrole (3)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="cn_bobdeng_userrole_in_userrole_(3) - 2019.02.01 at 13h 26m 16s.xml">
-      <configuration name="cn.bobdeng.userrole in userrole (3)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="cn_bobdeng_userrole_in_userrole_(3) - 2019.02.01 at 13h 27m 35s.xml">
       <configuration name="cn.bobdeng.userrole in userrole (3)" configurationId="JUnit" />
     </history-entry>
@@ -593,13 +581,18 @@
     <history-entry file="UserServiceImplTest - 2019.02.01 at 15h 47m 12s.xml">
       <configuration name="UserServiceImplTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserServiceImplTest_addDuplicateLoginName - 2019.02.02 at 10h 18m 16s.xml">
+      <configuration name="UserServiceImplTest.addDuplicateLoginName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceImplTest_addDuplicateLoginName - 2019.02.02 at 10h 18m 54s.xml">
+      <configuration name="UserServiceImplTest.addDuplicateLoginName" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12980000" />
+    <option name="totallyTimeSpent" value="13235000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1416" height="817" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
@@ -974,7 +967,7 @@
     <entry file="file://$PROJECT_DIR$/server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="7" selection-end-column="37" />
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="7" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -985,24 +978,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/cn/bobdeng/userrole/UserDO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1018,8 +997,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/domain/src/test/java/cn/bobdeng/userrole/UserServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="87" column="40" lean-forward="true" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
+        <state relative-caret-position="705">
+          <caret line="87" column="40" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/cn/bobdeng/userrole/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="64" column="66" selection-start-line="64" selection-start-column="66" selection-end-line="64" selection-end-column="66" />
         </state>
       </provider>
     </entry>
