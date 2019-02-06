@@ -58,7 +58,7 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     public List<User> searchByLoginName(String loginName) {
-        return userRoleDAO.findByLoginNameLike(loginName.replace("%", "") + "%")
+        return userRoleDAO.findTop20ByLoginNameLike(loginName.replace("%", "") + "%")
                 .map(UserDO::toEntity)
                 .collect(Collectors.toList());
     }

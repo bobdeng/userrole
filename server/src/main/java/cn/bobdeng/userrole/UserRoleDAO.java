@@ -23,5 +23,5 @@ public interface UserRoleDAO extends CrudRepository<UserDO, String> {
     @Modifying
     void updatePassword(@Param("id") String id, @Param("password") String password);
 
-    Stream<UserDO> findByLoginNameLike(String loginName);
+    Stream<UserDO> findTop20ByLoginNameLike(String loginName);
 }
