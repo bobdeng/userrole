@@ -1,6 +1,7 @@
 package cn.bobdeng.userrole;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -51,6 +52,11 @@ public class UserRepositoryImpl implements UserRepository {
                 .filter(user -> user.getWeixin() != null)
                 .filter(user -> user.getWeixin().getOpenId().equals(openId))
                 .findAny();
+    }
+
+    @Override
+    public List<User> searchByLoginName(String loginName) {
+        return null;
     }
 
     @Override

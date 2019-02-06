@@ -4,8 +4,10 @@ import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 @Service
 public class UserRepositoryImpl implements UserRepository {
@@ -52,5 +54,12 @@ public class UserRepositoryImpl implements UserRepository {
     @Override
     public boolean isLocked(User user) {
         return redissonClient.getBucket("user-login-lock-" + user.getId()).get() != null;
+    }
+
+    @Override
+    public List<User> searchByLoginName(String loginName) {
+        return userRoleDAO.findByLoginNameLike(loginName.replace("%", "") + "%")
+                .map(UserDO::toEntity)
+                .collect(Collectors.toList());
     }
 }

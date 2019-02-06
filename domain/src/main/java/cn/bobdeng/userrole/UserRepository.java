@@ -1,5 +1,6 @@
 package cn.bobdeng.userrole;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface UserRepository {
@@ -18,4 +19,6 @@ public interface UserRepository {
     void lockUser(User user, long minRetry);
 
     boolean isLocked(User user);
+
+    List<User> searchByLoginName(String loginName);
 }

@@ -6,7 +6,9 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 
 import javax.transaction.Transactional;
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Stream;
 
 public interface UserRoleDAO extends CrudRepository<UserDO, String> {
     Optional<UserDO> findByLoginName(String loginName);
@@ -20,4 +22,6 @@ public interface UserRoleDAO extends CrudRepository<UserDO, String> {
     @Transactional
     @Modifying
     void updatePassword(@Param("id") String id, @Param("password") String password);
+
+    Stream<UserDO> findByLoginNameLike(String loginName);
 }
