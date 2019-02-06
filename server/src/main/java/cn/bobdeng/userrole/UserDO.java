@@ -21,6 +21,8 @@ public class UserDO {
     @Column(length = 40)
     private String id;
     @Column(length = 20)
+    private String name;
+    @Column(length = 20)
     private String loginName;
     @Column(length = 100)
     private String password;
@@ -44,6 +46,7 @@ public class UserDO {
                 .email(UserEmail.builder().email(getEmail()).build())
                 .weixin(UserWeixin.builder().openId(getOpenId()).build())
                 .mobile(UserMobile.builder().mobile(getMobile()).build())
+                .name(getName())
                 .build();
     }
 
@@ -53,6 +56,7 @@ public class UserDO {
                 .loginName(user.getLoginName())
                 .password(user.getPassword())
                 .admin(user.isAdmin())
+                .name(user.getName())
                 .roles(Optional.ofNullable(user.getRoles()).map(list -> list.stream().collect(Collectors.joining(","))).orElse(null))
                 .email(Optional.ofNullable(user.getEmail()).map(UserEmail::getEmail).orElse(null))
                 .mobile(Optional.ofNullable(user.getMobile()).map(UserMobile::getMobile).orElse(null))

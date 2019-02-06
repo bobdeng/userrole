@@ -13,6 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 public class User {
     private String id;
+    private String name;
     private String loginName;
     private String password;
     private boolean admin;
