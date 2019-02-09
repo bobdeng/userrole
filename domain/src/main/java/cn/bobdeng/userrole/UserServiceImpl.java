@@ -50,6 +50,7 @@ public class UserServiceImpl implements UserService {
                 .loginName(loginName)
                 .password(passwordEncoder.encode(password))
                 .roles(Arrays.asList("admin"))
+                .human(true)
                 .build();
         userRepository.newUser(user);
         return user;

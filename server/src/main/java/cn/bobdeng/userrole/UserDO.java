@@ -35,6 +35,7 @@ public class UserDO {
     private String email;
     @Column(length = 20)
     private String mobile;
+    private boolean human;
 
     public User toEntity() {
         return User.builder()
@@ -47,6 +48,7 @@ public class UserDO {
                 .weixin(UserWeixin.builder().openId(getOpenId()).build())
                 .mobile(UserMobile.builder().mobile(getMobile()).build())
                 .name(getName())
+                .human(isHuman())
                 .build();
     }
 
@@ -57,6 +59,7 @@ public class UserDO {
                 .password(user.getPassword())
                 .admin(user.isAdmin())
                 .name(user.getName())
+                .human(user.isHuman())
                 .roles(Optional.ofNullable(user.getRoles()).map(list -> list.stream().collect(Collectors.joining(","))).orElse(null))
                 .email(Optional.ofNullable(user.getEmail()).map(UserEmail::getEmail).orElse(null))
                 .mobile(Optional.ofNullable(user.getMobile()).map(UserMobile::getMobile).orElse(null))
